@@ -1,0 +1,5 @@
+MainUI (Control)
+ ├── Background (TextureRect)    # Céu, campo
+ ├── SlotsContainer (GridContainer)
+ ├── TopBar (HBoxContainer)      # Moedas, energia, config
+ └── BottomBar (HBoxContainer)   # Botões de ação

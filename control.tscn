@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://drwrjibrvn22k"]
+
+[ext_resource type="Texture2D" uid="uid://duhhvc30ot8y8" path="res://assets/main_background.png" id="1_62e2m"]
+[ext_resource type="Shader" uid="uid://bn14e4iydgm2" path="res://shader/blur_shader.gdshader" id="2_qtu10"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ee4bf"]
+shader = ExtResource("2_qtu10")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -170.0
+offset_top = -92.0
+offset_right = 2134.0
+offset_bottom = 1204.0
+texture = ExtResource("1_62e2m")
+
+[node name="bluroverl" type="TextureRect" parent="."]
+z_index = 1
+material = SubResource("ShaderMaterial_ee4bf")
+layout_mode = 0
+offset_left = -170.0
+offset_top = -92.0
+offset_right = 2134.0
+offset_bottom = 1204.0
+texture = ExtResource("1_62e2m")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 56.0
+offset_right = 1847.0
+offset_bottom = 1004.0
+columns = 3
