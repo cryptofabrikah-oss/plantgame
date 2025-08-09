@@ -1,14 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://drwrjibrvn22k"]
+[gd_scene load_steps=10 format=3 uid="uid://drwrjibrvn22k"]
 
 [ext_resource type="Texture2D" uid="uid://duhhvc30ot8y8" path="res://assets/background/main_background.png" id="1_62e2m"]
 [ext_resource type="Shader" uid="uid://bn14e4iydgm2" path="res://assets/background/blur_shader.gdshader" id="2_qtu10"]
+[ext_resource type="Texture2D" uid="uid://csl2tisiqe73k" path="res://assets/plants/01 -  broto de ferro/brotodeferro01.png" id="3_ee4bf"]
 [ext_resource type="Texture2D" uid="uid://dbsdo4o15kn32" path="res://assets/ui/icons/plusbutton.png" id="3_qtu10"]
+[ext_resource type="Texture2D" uid="uid://dewnffxuo2jqk" path="res://assets/plants/01 - cacto radioativo/cactoradioativo01.png" id="4_kbped"]
+[ext_resource type="Texture2D" uid="uid://du2dbmnnlaai7" path="res://assets/plants/01 - musgo regenerador/musgoregenerador01.png" id="5_iy58a"]
+[ext_resource type="Texture2D" uid="uid://b4eme7wii0j8y" path="res://assets/plants/01 - trevo sombrio/trevosombrio01.png" id="7_6a6wx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ee4bf"]
 shader = ExtResource("2_qtu10")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
-bg_color = Color(0, 0, 0, 0.792157)
+bg_color = Color(0, 0, 0, 0.788235)
 border_width_left = 15
 border_width_top = 15
 border_width_right = 15
@@ -57,19 +61,36 @@ theme_override_constants/v_separation = 70
 columns = 3
 
 [node name="slot" type="Panel" parent="GridContainer"]
+z_index = 2
 custom_minimum_size = Vector2(360, 400)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+
+[node name="Brotodeferro01" type="Sprite2D" parent="GridContainer/slot"]
+z_index = 3
+position = Vector2(182, 224)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("3_ee4bf")
 
 [node name="slot2" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(360, 400)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
 
+[node name="Cactoradioativo01" type="Sprite2D" parent="GridContainer/slot2"]
+position = Vector2(181, 224)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("4_kbped")
+
 [node name="slot3" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(360, 400)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+
+[node name="Musgoregenerador01" type="Sprite2D" parent="GridContainer/slot3"]
+position = Vector2(181, 219)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("5_iy58a")
 
 [node name="slot4" type="Panel" parent="GridContainer"]
 custom_minimum_size = Vector2(360, 400)
@@ -82,3 +103,8 @@ layout_mode = 2
 icon = ExtResource("3_qtu10")
 flat = true
 icon_alignment = 1
+
+[node name="Trevosombrio01" type="Sprite2D" parent="GridContainer"]
+position = Vector2(180, 690)
+scale = Vector2(0.704, 0.704)
+texture = ExtResource("7_6a6wx")

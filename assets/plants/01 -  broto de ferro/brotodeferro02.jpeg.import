@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8itx55xw1tg1"
-path="res://.godot/imported/Oak_Tree.png-346eed21838e19cdb9eb44d3aedf6f1b.ctex"
+uid="uid://c2fwyqqj8yuu3"
+path="res://.godot/imported/brotodeferro02.jpeg-4261582f6d91659b24d242d602db48f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/Oak_Tree.png"
-dest_files=["res://.godot/imported/Oak_Tree.png-346eed21838e19cdb9eb44d3aedf6f1b.ctex"]
+source_file="res://assets/plants/01 -  broto de ferro/brotodeferro02.jpeg"
+dest_files=["res://.godot/imported/brotodeferro02.jpeg-4261582f6d91659b24d242d602db48f5.ctex"]
 
 [params]
 
