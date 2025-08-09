@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgduexi1255lt"
-path="res://.godot/imported/orquideadecristal.jpeg-4e6fab0fe4de22ec4180ab132b506c22.ctex"
+uid="uid://bke4ajsp0g6jy"
+path="res://.godot/imported/orquidiadecristal03.png-2156c1033e263f9469f364bb32d48838.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/02 - orquidea de cristal/orquideadecristal.jpeg"
-dest_files=["res://.godot/imported/orquideadecristal.jpeg-4e6fab0fe4de22ec4180ab132b506c22.ctex"]
+source_file="res://assets/03 - orquidea de cristal/orquidiadecristal03.png"
+dest_files=["res://.godot/imported/orquidiadecristal03.png-2156c1033e263f9469f364bb32d48838.ctex"]
 
 [params]
 
