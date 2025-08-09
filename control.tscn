@@ -1,17 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://drwrjibrvn22k"]
+[gd_scene load_steps=6 format=3 uid="uid://drwrjibrvn22k"]
 
 [ext_resource type="Texture2D" uid="uid://duhhvc30ot8y8" path="res://assets/background/main_background.png" id="1_62e2m"]
 [ext_resource type="Shader" uid="uid://bn14e4iydgm2" path="res://assets/background/blur_shader.gdshader" id="2_qtu10"]
+[ext_resource type="Texture2D" uid="uid://dbsdo4o15kn32" path="res://assets/ui/icons/plusbutton.png" id="3_qtu10"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ee4bf"]
 shader = ExtResource("2_qtu10")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
-bg_color = Color(0.666667, 0.666667, 0.666667, 1)
-border_width_left = 6
-border_width_top = 6
-border_width_right = 6
-border_width_bottom = 6
+bg_color = Color(0, 0, 0, 0.792157)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0, 0, 0, 1)
+border_blend = true
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -43,6 +46,7 @@ texture = ExtResource("1_62e2m")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 z_index = 2
+custom_minimum_size = Vector2(360, 400)
 layout_mode = 0
 offset_left = 315.0
 offset_top = 160.0
@@ -72,12 +76,9 @@ custom_minimum_size = Vector2(360, 400)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
 
-[node name="slot5" type="Panel" parent="GridContainer"]
+[node name="Button" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(360, 400)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
-
-[node name="slot6" type="Panel" parent="GridContainer"]
-custom_minimum_size = Vector2(360, 400)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_62e2m")
+icon = ExtResource("3_qtu10")
+flat = true
+icon_alignment = 1
