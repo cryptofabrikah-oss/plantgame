@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7r7lc8x6eki3"]
+
+[ext_resource type="Script" uid="uid://bhikkawfe4cja" path="res://select_planta.gd" id="1_cok27"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lmwq"]
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.00392157, 0.00392157, 0.00392157, 0.333333)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="SelecaoPlanta" type="Control"]
+z_index = 5
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cok27")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 374.0
+offset_top = 273.0
+offset_right = 1567.0
+offset_bottom = 806.0
+color = Color(0, 0, 0, 0.00392157)
+
+[node name="painel_principal" type="Panel" parent="ColorRect"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 4.0
+offset_right = 1191.0
+offset_bottom = 534.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6lmwq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/painel_principal"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="texto_titulo" type="Label" parent="ColorRect/painel_principal/VBoxContainer"]
+layout_mode = 2
+text = "Slecione a planta"
+
+[node name="grid_plantas" type="GridContainer" parent="ColorRect/painel_principal/VBoxContainer"]
+layout_mode = 2

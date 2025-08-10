@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt75hp7k4x614"
-path="res://.godot/imported/cactoradioativo01.png-6ccb27fedc82b4e5a5443e3b1a1aa13b.ctex"
+uid="uid://du2dbmnnlaai7"
+path="res://.godot/imported/batata.png-899d3776643d3392f3af9a5deaec3047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/01 - cacto radioativo/cactoradioativo01.png"
-dest_files=["res://.godot/imported/cactoradioativo01.png-6ccb27fedc82b4e5a5443e3b1a1aa13b.ctex"]
+source_file="res://assets/plants/batata.png"
+dest_files=["res://.godot/imported/batata.png-899d3776643d3392f3af9a5deaec3047.ctex"]
 
 [params]
 
