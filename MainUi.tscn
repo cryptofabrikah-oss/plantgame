@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://drwrjibrvn22k"]
+
+[ext_resource type="Texture2D" uid="uid://duhhvc30ot8y8" path="res://assets/background/main_background.png" id="1_a763d"]
+[ext_resource type="PackedScene" uid="uid://nxplijyoxdxj" path="res://Slots.tscn" id="1_qqtb2"]
+[ext_resource type="Shader" uid="uid://bn14e4iydgm2" path="res://assets/background/blur_shader.gdshader" id="2_6vjbp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ee4bf"]
+shader = ExtResource("2_6vjbp")
+
+[node name="MainUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Backgrond" type="Parallax2D" parent="."]
+
+[node name="background" type="TextureRect" parent="Backgrond"]
+offset_left = -170.0
+offset_top = -92.0
+offset_right = 2134.0
+offset_bottom = 1204.0
+texture = ExtResource("1_a763d")
+
+[node name="bluroverl" type="TextureRect" parent="Backgrond"]
+z_index = 1
+material = SubResource("ShaderMaterial_ee4bf")
+offset_left = -170.0
+offset_top = -92.0
+offset_right = 2134.0
+offset_bottom = 1204.0
+texture = ExtResource("1_a763d")
+
+[node name="Slots" parent="." instance=ExtResource("1_qqtb2")]
+layout_mode = 0
+
+[node name="TopBar" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CoinIcon" type="TextureRect" parent="TopBar"]
+layout_mode = 2
+
+[node name="CoinLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+
+[node name="EnergyIcon" type="TextureRect" parent="TopBar"]
+layout_mode = 2
+
+[node name="EnergyLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+
+[node name="SettingsButton" type="Button" parent="TopBar"]
+layout_mode = 2
+
+[node name="BottomBar" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ShopButton" type="Button" parent="BottomBar"]
+layout_mode = 2
+
+[node name="InventoryButton" type="Button" parent="BottomBar"]
+layout_mode = 2
+
+[node name="FarmButton" type="Button" parent="BottomBar"]
+layout_mode = 2

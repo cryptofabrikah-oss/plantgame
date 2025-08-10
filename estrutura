@@ -1,8 +1,21 @@
 MainUI (Control)
- ├── Background (TextureRect)    # Céu, campo
+ ├── Background (ParallaxBackground)
+ │     ├── LayerSky (ParallaxLayer + TextureRect)
+ │     ├── LayerClouds (ParallaxLayer + TextureRect)
+ │     └── LayerGround (ParallaxLayer + TextureRect)
+ ├── TopBar (HBoxContainer)
+ │     ├── CoinIcon (TextureRect)
+ │     ├── CoinLabel (Label)
+ │     ├── EnergyIcon (TextureRect)
+ │     ├── EnergyLabel (Label)
+ │     └── SettingsButton (Button)
  ├── SlotsContainer (GridContainer)
- ├── TopBar (HBoxContainer)      # Moedas, energia, config
- └── BottomBar (HBoxContainer)   # Botões de ação
+ │     ├── Slot (instância de Slot.tscn)
+ │     ├── Slot ...
+ └── BottomBar (HBoxContainer)
+       ├── ShopButton (Button)
+       ├── InventoryButton (Button)
+       └── FarmButton (Button)
 
 
 

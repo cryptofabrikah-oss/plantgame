@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csl2tisiqe73k"
-path="res://.godot/imported/brotodeferro01.png-6f91ca255452716a963b62275b647ccf.ctex"
+path="res://.godot/imported/tomate.png-e6876cc070dcd06391658df4f368e8da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/01 -  broto de ferro/brotodeferro01.png"
-dest_files=["res://.godot/imported/brotodeferro01.png-6f91ca255452716a963b62275b647ccf.ctex"]
+source_file="res://assets/plants/tomate.png"
+dest_files=["res://.godot/imported/tomate.png-e6876cc070dcd06391658df4f368e8da.ctex"]
 
 [params]
 

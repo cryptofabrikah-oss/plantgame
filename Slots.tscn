@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://nxplijyoxdxj"]
+
+[ext_resource type="Texture2D" uid="uid://dbsdo4o15kn32" path="res://assets/ui/icons/plusbutton.png" id="5_jrsfs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utfyn"]
+bg_color = Color(0, 0, 0, 0.788235)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Slots" type="Panel"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SlotsContainer" type="GridContainer" parent="."]
+z_index = 2
+custom_minimum_size = Vector2(360, 400)
+offset_left = 315.0
+offset_top = 160.0
+offset_right = 1595.0
+offset_bottom = 1030.0
+theme_override_constants/h_separation = 100
+theme_override_constants/v_separation = 70
+columns = 3
+
+[node name="Slot0" type="Panel" parent="SlotsContainer"]
+custom_minimum_size = Vector2(360, 400)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_utfyn")
+
+[node name="PlantaSprite" type="TextureRect" parent="SlotsContainer/Slot0"]
+layout_mode = 0
+offset_right = 362.0
+offset_bottom = 401.0
+
+[node name="Slot1" type="Panel" parent="SlotsContainer"]
+custom_minimum_size = Vector2(360, 400)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_utfyn")
+
+[node name="PlantaSprite2" type="TextureRect" parent="SlotsContainer/Slot1"]
+layout_mode = 2
+offset_left = 3.0
+offset_right = 351.0
+offset_bottom = 394.0
+
+[node name="Slot2" type="Panel" parent="SlotsContainer"]
+custom_minimum_size = Vector2(360, 400)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_utfyn")
+
+[node name="PlantaSprite3" type="TextureRect" parent="SlotsContainer/Slot2"]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 358.0
+offset_bottom = 400.0
+
+[node name="Slot3" type="Panel" parent="SlotsContainer"]
+custom_minimum_size = Vector2(360, 400)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_utfyn")
+
+[node name="PlantaSprite4" type="TextureRect" parent="SlotsContainer/Slot3"]
+layout_mode = 2
+offset_top = 6.0
+offset_right = 360.0
+offset_bottom = 406.0
+
+[node name="Button" type="Button" parent="SlotsContainer"]
+custom_minimum_size = Vector2(360, 400)
+layout_mode = 2
+icon = ExtResource("5_jrsfs")
+flat = true
+icon_alignment = 1
